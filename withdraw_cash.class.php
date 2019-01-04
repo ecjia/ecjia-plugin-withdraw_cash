@@ -103,6 +103,16 @@ class withdraw_cash extends WithdrawAbstract
     {
 
     }
+
+    /**
+     * 转帐查询方法
+     * @param $order_sn
+     * @return \Royalcms\Component\Support\Collection | \ecjia_error
+     */
+    public function transfersQuery($order_sn)
+    {
+        return new ecjia_error('现金提现不支持查询对账功能。');
+    }
     
 }
 

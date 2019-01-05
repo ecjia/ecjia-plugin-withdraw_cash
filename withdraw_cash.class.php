@@ -95,7 +95,7 @@ class withdraw_cash extends WithdrawAbstract
     }
 
     /**
-     * 转帐操作方法
+     * 转账操作方法
      * @param $order_sn
      * @return \Royalcms\Component\Support\Collection | ecjia_error
      */
@@ -105,7 +105,7 @@ class withdraw_cash extends WithdrawAbstract
     }
 
     /**
-     * 转帐查询方法
+     * 转账查询方法
      * @param $order_sn
      * @return \Royalcms\Component\Support\Collection | \ecjia_error
      */

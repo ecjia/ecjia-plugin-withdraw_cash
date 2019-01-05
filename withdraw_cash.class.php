@@ -101,7 +101,13 @@ class withdraw_cash extends WithdrawAbstract
      */
     public function transfers($order_sn)
     {
-        return true;
+        $repository = $this->getWithdrawRecordRepository();
+
+        $repository->withdrawSuccessfulRecord($order_sn, null);
+
+        $withdrawRecord = $repository->findWithdrawOrderSn($order_sn);
+
+        return $withdrawRecord;
     }
 
     /**

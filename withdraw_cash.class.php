@@ -97,11 +97,11 @@ class withdraw_cash extends WithdrawAbstract
     /**
      * 转账操作方法
      * @param $order_sn
-     * @return \Royalcms\Component\Support\Collection | ecjia_error
+     * @return \Royalcms\Component\Support\Collection | ecjia_error | boolean
      */
     public function transfers($order_sn)
     {
-
+        return true;
     }
 
     /**

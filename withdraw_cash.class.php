@@ -117,7 +117,7 @@ class withdraw_cash extends WithdrawAbstract
      */
     public function transfersQuery($order_sn)
     {
-        return new ecjia_error('现金提现不支持查询对账功能。');
+        return new ecjia_error(__('现金提现不支持查询对账功能。', 'withdraw_cash'));
     }
     
 }

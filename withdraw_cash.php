@@ -74,6 +74,7 @@ class plugin_withdraw_cash
 }
 
 Ecjia_PluginManager::extend('withdraw_cash', function() {
+    RC_Locale::loadPluginTextdomain('withdraw_cash');
     require_once RC_Plugin::plugin_dir_path(__FILE__) . 'withdraw_cash.class.php';
     return new withdraw_cash();
 });
